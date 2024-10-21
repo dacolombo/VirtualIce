@@ -51,6 +51,12 @@ VirtualIce requires Python 3, EMAN2, IMOD, and several dependencies, which can b
 pip install cupy gpustat mrcfile numpy opencv-python pandas scipy SimpleITK
 ```
 
+If you have issue installing dependencies with pip, you can use conda/mamba:
+
+```bash
+mamba env create -f environment.yml -p /path/to/conda/env
+```
+
 To use VirtualIce, clone the github directory, make virtualice.py executable (`chmod +x virtualice.py`), download the ice_images/ directory from [EMPIAR-12287](https://www.ebi.ac.uk/empiar/EMPIAR-12287/) to the VirtualIce/ice_images/ directory, and ensure virtualice.py is in your environment for use.
 
 ## Examples
